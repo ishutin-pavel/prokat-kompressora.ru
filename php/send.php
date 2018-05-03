@@ -9,7 +9,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 		die(); // умирaeм
 	}
 
-	 $to = 'pavel@ishutin.com,6488060@mail.ru';
+	 $to = '6488060@mail.ru';
 	 $subject = 'Заполнена форма на сайте: '.$_SERVER['HTTP_REFERER'];
 	 $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
 	 $message = "Имя: ".$_POST['name']."\nТелефон: ".$_POST['tel'];
